@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    transition:all 0.4s;
+    font-weight:600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+.nav-item{
+    padding: 15px;
+    font-weight: 500;
+}
+.btn{
+    height: 52px;
+    width: 130px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+    background-color: rgb(68, 19, 19);
+}
+.btn:hover{
+    background: #ac5252;
+    color: #fff;
+    transition: all 0.4s;
+}
+.main{
+    background: url(../Assets/img9.jpg)no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.main h1{
+    margin: auto;
+    padding-top: 1rem;
+    font-size: 5.0rem;
+    font-weight: 500;
+    color: white;
+}
+.main p{
+    margin: auto;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(247, 241, 241);
+}
+.sec2{
+    background-color: rgb(247, 240, 240);
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+.sec2 h1{
+    font-size: 3.5rem;
+    color: #000000 ;
+}
+.sec2 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    color: #000000;
+}
+.sec3{
+    margin-top:0 ;
+    padding-top: 1rem;
+}
+.card-img-top {
+    padding: 0px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/*Insta post*/
+.insta-posts{
+    position: relative;
+    overflow: hidden;
+}
+.sec4{
+    background-color: rgb(247, 240, 240);
+    padding-bottom: 20rem;
+    padding-top: 100rem;
+}
+.sec4 p{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.insta-posts .insta-btn .icon{
+    color: #fff;
+}
+.insta-posts .insta-btn{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    background-color: rgba(185, 177, 177, 0.4);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    text-decoration: none;
+}
+.insta-posts img{
+    transition: all 0.4s;
+    height: 250px;
+    width: 250px;
+    padding-bottom: 30px;
+}
+.insta-posts .thumbnail{
+    top:-50px; 
+    left:-35px; 
+    display:block; 
+    z-index:999; 
+    cursor: pointer; 
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+.insta-posts .thumbnail:hover{
+    transform: scale(1.5);
+}
+.insta-posts:hover img{
+      transform: scale(1.2);
+}
+.insta-posts:hover .insta-btn{
+       opacity:1;
+       text-decoration: none;
+}
+.intro-text h1{
+    color: #000000;
+    font-weight: 500;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.intro-text p{
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.sec6{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.section-header{
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 25px;
+    font-size: 3.5rem;
+    color: #000000;
+}
+.section-header:after{
+    content: "";
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+}
+.section-header span{
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+}
+.testimonials{
+    max-width: 1000px;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+}
+.single-item{
+    background: rgb(179, 165, 165);
+    color: rgb(36, 2, 2);
+    padding: 15px;
+    text-align: center;
+}
+.bio h4{
+    font-size: 1rem;
+}
+.img-area{
+    margin: 0 15px 15px 15px;
+}
+.img-area img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 7px solid burlywood;
+}
+.content{
+    font-size: 18px;
+    padding-top: 80px;
+}
+.content p{
+    text-align: justify;
+}
+.sec5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: rgb(245, 240, 240);
+}
+.contact-container{
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background: rgb(121, 117, 117);
+    box-shadow: 0 0 1rem rgba(35, 12, 117, 0.16);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.form-container{
+    padding: 20px;
+}
+.form-container h3{
+    margin-left: 150px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #000000;
+    border-radius: 0.8rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.contact-form .send-button{
+    width: 200px;
+    margin-left: 100px;
+    border: none;
+    outline: none;
+    background: rgb(25, 68, 187);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.contact-form .send-button:hover{
+    background: hsl(181, 1005, 44%,0.8);
+    transition: 0.3s all linear;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+
+}
+footer{
+    background: linear-gradient(rgb(22, 22, 22), rgb(14, 13, 13)),url(./Assets/img7.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+.footer-top{
+    margin-bottom: 30px;
+
+}
+.ico{
+    color: rgba(255,255,255,0.75);
+}
+footer p{
+    color: rgba(255,255,255,0.75);
+}
+footer .social-links a{
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: 10px;
+}
+footer img{
+    max-width: 180px;
+}
+.footer-bottom{
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.4);
+}
+@media(max-width:964px){
+    .contact-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media(max-width:700px){
+    .contact-container{
+        grid-template-columns: 1fr;
+        margin-top: 20rem !important;
+    }
+}
